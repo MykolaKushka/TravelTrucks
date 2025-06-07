@@ -1,0 +1,26 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #101828;
+}
+
+button, input, textarea {
+  font-family: 'Inter', sans-serif;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #F7F7F7;
+  color: white;
+  text-align: center;
+  height: 72px;
+}
+
+.content {
+  flex-grow: 1;
+}

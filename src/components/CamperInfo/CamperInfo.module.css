@@ -1,0 +1,26 @@
+.camperContentTop {
+  display: flex;
+  margin-block-end: 24px;
+  gap: 16px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.iconStar {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-mask: url('../../images/icons/star.svg') no-repeat center / contain;
+  mask: url('../../images/icons/star.svg') no-repeat center / contain;
+  background-color: #FFC531;
+  margin-right: 4px;
+}
+
+.location {
+  background: url('../../images/icons/map.svg') no-repeat left center / 16px;
+  padding-inline-start: 20px;
+}

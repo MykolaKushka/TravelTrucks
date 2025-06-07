@@ -1,0 +1,64 @@
+.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-inline-end: 8px;
+}
+
+.icon_grid {
+  background-image: url('../images/icons/bi_grid-1x2.svg');
+}
+
+.icon_grid_2 {
+  background-image: url('../images/icons/bi_grid-3x3-gap.svg');
+}
+
+.icon_grid_3 {
+  background-image: url('../images/icons/bi_grid.svg');
+}
+
+.icon_kitchen {
+  background-image: url('../images/icons/cup-hot.svg');
+}
+
+.icon_automatic, .icon_manual {
+  background-image: url('../images/icons/diagram.svg');
+}
+
+.icon_bathroom {
+  background-image: url('../images/icons/ph_shower.svg');
+}
+
+.icon_tv {
+  background-image: url('../images/icons/tv.svg');
+}
+
+.icon_ac {
+  background-image: url('../images/icons/wind.svg');
+}
+
+.icon_radio {
+  background-image: url('../images/icons/ui-radios.svg');
+}
+
+.icon_refrigerator {
+  background-image: url('../images/icons/solar_fridge-outline.svg');
+}
+
+.icon_gas {
+  background-image: url('../images/icons/gas.svg');
+}
+
+.icon_water {
+  background-image: url('../images/icons/ion_water-outline.svg');
+}
+
+.icon_microwave {
+  background-image: url('../images/icons/microwave.svg');
+}
+
+.icon_petrol, .icon_hybrid, .icon_diesel {
+  background-image: url('../images/icons/petrol.svg');
+}

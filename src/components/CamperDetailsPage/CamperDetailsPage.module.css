@@ -1,0 +1,188 @@
+.detailsPage {
+  padding: 48px 64px 80px;
+  gap: 32px;
+}
+
+h1 {
+  margin-block: 0 8px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0 0 28px;
+}
+
+.gallery {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.gallery img {
+  width: 292px;
+  height: 312px;
+  object-fit: none;
+  border-radius: 10px;
+}
+
+.description {
+  color: #475467;
+  margin: 0 0 60px;
+}
+
+.tabs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 44px;
+  border-bottom: 1px solid #DADDE1;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-weight: 600;
+  color: #101828;
+  font-size: 20px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+
+.tabs .active {
+  border-bottom: 2px solid #E44848;
+}
+
+.bottomSection {
+  display: flex;
+  gap: 32px;
+}
+
+.tabContent {
+  flex: 1;
+}
+
+.featuresTab {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex-wrap: wrap;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  padding: 44px 52px;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  background-color: #F2F4F7;
+  border-radius: 100px;
+  padding: 8px 18px;
+}
+
+.featureIcon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-inline-end: 8px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.details h4 {
+  margin: 0 0 24px;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid #DADDE1;
+  padding-bottom: 24px;
+}
+
+.details dl {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
+}
+
+.details dt {
+  width: 50%;
+} 
+
+.details dd {
+  width: 50%;
+  margin: 0;
+  text-align: end;
+}
+
+.reviewsTab {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.reviewerInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.reviewerAvatar {
+  width: 60px;
+  height: 60px;
+  background-color: #F2F4F7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #E44848;
+  font-size: 24px;
+}
+
+.reviewerName {
+  margin: 0;
+  font-weight: 500;
+}
+
+.reviewStars {
+  display: flex;
+}
+
+.reviewText {
+  color: #475467;
+  margin: 0;
+}
+
+.starIcon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-mask: url('../../images/icons/star.svg') no-repeat center / contain;
+  mask: url('../../images/icons/star.svg') no-repeat center / contain;
+  background-color: #FFC531;
+  margin-right: 4px;
+}
+
+.starIconEmpty {
+  background-color: #F2F4F7;
+}
+
+.loader {
+  justify-content: center;
+  display: flex;
+  height: 100px;
+}
