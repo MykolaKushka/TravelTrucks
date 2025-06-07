@@ -12,15 +12,15 @@ const BookingForm = () => {
     const bookingDate = formData.get('bookingDate');
     const comment = formData.get('comment');
 
-    const message = `You sent form: \n
-    Name: ${name}\n
-    Email: ${email}\n
-    Booking Date: ${bookingDate}\n
-    Comment: ${comment}\n\n
-
+    const message = `You sent form:<br>
+    Name: ${name}<br>
+    Email: ${email}<br>
+    Booking Date: ${bookingDate}<br>
+    Comment: ${comment}<br><br>
     Thank you for your booking! We will contact you soon.`;
 
-    toast.success(message);
+
+    toast.success(<div dangerouslySetInnerHTML={{ __html: message }} />);
 
     e.target.reset();
   };

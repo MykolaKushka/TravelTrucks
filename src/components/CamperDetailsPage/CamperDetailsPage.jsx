@@ -10,6 +10,15 @@ const CamperDetailsPage = () => {
   const { id } = useParams();
   const [camper, setCamper] = useState(null);
   const [activeTab, setActiveTab] = useState('features');
+  const [activeImage, setActiveImage] = useState(null);
+
+  const handleImageClick = (img) => {
+    setActiveImage(img);
+  };
+
+  const handleCloseModal = () => {
+    setActiveImage(null);
+  };
 
   useEffect(() => {
     const loadCamper = async () => {
@@ -74,9 +83,14 @@ const CamperDetailsPage = () => {
       />
       <p className={styles.price}>€{price.toFixed(2)}</p>
 
-      <div className={styles.gallery}>
+     <div className={styles.gallery}>
         {gallery.map((img, index) => (
-          <img key={index} src={img.thumb} alt={name} />
+            <img
+            key={index}
+            src={img.thumb}
+            alt={name}
+            onClick={() => handleImageClick(img.thumb)}
+            />
         ))}
       </div>
 
@@ -163,6 +177,15 @@ const CamperDetailsPage = () => {
 
         <BookingForm />
       </div>
+
+      {activeImage && (
+        <div className={styles.modalOverlay} onClick={handleCloseModal}>
+            <button className={styles.closeButton}>×</button>
+            <div className={styles.modalContent}>
+            <img src={activeImage} alt="Camper enlarged" />
+            </div>
+        </div>
+      )}
     </div>
   );
 };

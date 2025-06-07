@@ -2,6 +2,9 @@
   display: flex;
   gap: 64px;
   padding: 48px 64px;
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
 .camperList {

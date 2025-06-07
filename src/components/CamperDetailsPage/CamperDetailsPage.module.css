@@ -1,6 +1,9 @@
 .detailsPage {
   padding: 48px 64px 80px;
   gap: 32px;
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -27,6 +30,7 @@ h1 {
   height: 312px;
   object-fit: none;
   border-radius: 10px;
+  cursor: zoom-in;
 }
 
 .description {
@@ -185,4 +189,36 @@ h1 {
   justify-content: center;
   display: flex;
   height: 100px;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modalContent img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  cursor: zoom-out;
+}
+
+.closeButton {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
 }
